@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery file/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id="hide_button">Click to Hide</button>
+    <button id="show_button">Click to Show</button>
+    <script>
+        $(document).ready(function(){
+            $('#hide_button').click(function() {
+                $("h1").hide(2000);
+
+            })
+
+            $('#show_button').click(function() {
+                $("h1").show(2000);
+
+            })
+        })
+    </script>
+</body>
+</html>
